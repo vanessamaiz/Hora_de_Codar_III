@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio7</title>
+    <script>
+        let soma = 0;
+        for (let i = 0; i < 6; i++){
+            let numero = parseFloat(prompt("Informe a nota:"));
+            if (numero > 10 || numero < 0){
+                numero = parseFloat(prompt("Número inválido! Informe novamente uma nota de 0 a 10."));
+            }
+            soma += numero
+        }
+        var media = soma / 6;
+        document.write("A sua média final é: " + media.toFixed(2) + ".");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

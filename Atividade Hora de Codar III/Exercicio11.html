@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio11</title>
+    <script>
+        let valoresEntre = [];
+        let valoresFora = [];
+        for(i = 0; i < 10; i++){
+            var numero = parseInt(prompt("Informe um número: "));
+            if(numero >= 24 && numero <= 42){
+                valoresEntre.push(numero);
+            }else{
+                valoresFora.push(numero);
+            }
+        }
+        document.write("Valores informados dentro do intervalo de 24 e 42: " + valoresEntre.join(", "));
+        document.write("<br>Valores informados fora do intervalo de 24 e 42: " + valoresFora.join(", "));
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

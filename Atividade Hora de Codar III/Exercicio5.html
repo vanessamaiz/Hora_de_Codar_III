@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio5</title>
+    <script>
+        var primeiro_numero = parseInt(prompt("Informe o primeiro número"));
+        var segundo_numero = parseInt(prompt("Informe o segundo número(deve ser maior que o primeiro):"));
+        let soma = 0;
+        let divisor = 0;
+        if (primeiro_numero >= segundo_numero){
+            alert("Informe o primeiro número novamente(deve ser menor que o segundo):");
+        }else{
+            let numero = primeiro_numero
+
+            while (numero <= segundo_numero){
+                soma += numero;
+                divisor++;
+                numero++;
+            }
+            var media_entre_numeros = soma / divisor;
+            var media_dos_numeros = (primeiro_numero + segundo_numero) / 2;
+            document.write("A média dos números entre " + primeiro_numero + " e " + segundo_numero + " é: " + media_entre_numeros + ".");
+            document.write("<br>A média dos números " + primeiro_numero + " e " + segundo_numero + " é: " + media_dos_numeros + ".");       
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
